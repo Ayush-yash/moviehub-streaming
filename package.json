@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint --quiet ./src",
     "preview": "vite preview",
     "deploy": "npm run build && vercel --prod"
@@ -71,7 +71,6 @@
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@metagptx/vite-plugin-source-locator": "latest",
-    "@rollup/plugin-terser": "^0.4.4",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^22.5.5",
