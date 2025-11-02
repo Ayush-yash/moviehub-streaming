@@ -5,6 +5,7 @@ import { viteSourceLocator } from "@metagptx/vite-plugin-source-locator";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  root: ".",
   plugins: [
     viteSourceLocator({
       prefix: "mgx",
@@ -16,7 +17,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "./",
+  base: "/",
   build: {
     outDir: "dist",
     assetsDir: "assets",
